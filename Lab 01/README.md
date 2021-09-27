@@ -1,8 +1,8 @@
-# Lab 1: YOUR_FIRSTNAME FAMILYNAME
+# Lab 1: Šimon Roubal
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [Repository link](https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab%2001)
 
 
 ### Blink example
