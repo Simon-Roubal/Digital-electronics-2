@@ -43,10 +43,21 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
         _delay_ms(SHORT_DELAY);
 
-        // WRITE YOUR CODE HERE
+        PORTB = PORTB ^ (1<<LED_GREEN);
+      	
+        _delay_ms(SHORT_DELAY);
+      
+        PORTB = PORTB & ~(1<<LED_GREEN);
+      
+        _delay_ms(SHORT_DELAY);
+      
+        PORTB = PORTB ^ (1<<LED_GREEN);
+      
+        _delay_ms(3*SHORT_DELAY);
+      
+     	PORTB = PORTB & ~(1<<LED_GREEN);
     }
 
     // Will never reach this
