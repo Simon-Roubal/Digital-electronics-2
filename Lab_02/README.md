@@ -1,8 +1,8 @@
-# Lab 2: YOUR_FIRSTNAME FAMILYNAME
+# Lab 2: ŠIMON ROUBAL
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_02](https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_02)
 
 
 ### Active-low and active-high LEDs
