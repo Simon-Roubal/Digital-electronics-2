@@ -102,6 +102,8 @@ int main(void)
             
             PORTB = PORTB & ~(1<<LED_GREEN);
             PORTC = PORTC & ~(1<<LED_RED);
+            
+            loop_until_bit_is_clear(PIND, BUTTON);
         }
     }
 
