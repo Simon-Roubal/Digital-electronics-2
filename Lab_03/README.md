@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_03](https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_03)
 
 
 ### Data types in C
@@ -12,9 +12,9 @@ Link to your `Digital-electronics-2` GitHub repository:
 | **Data type** | **Number of bits** | **Range** | **Description** |
 | :-: | :-: | :-: | :-- | 
 | `uint8_t`  | 8 | 0, 1, ..., 255 | Unsigned 8-bit integer |
-| `int8_t`   |  |  |  |
-| `uint16_t` |  |  |  |
-| `int16_t`  |  |  |  |
+| `int8_t`   | 8 |  |  |
+| `uint16_t` | 16 |  |  |
+| `int16_t`  | 16 |  |  |
 | `float`    |  | -3.4e+38, ..., 3.4e+38 | Single-precision floating-point |
 | `void`     |  |  |  |
 
@@ -29,15 +29,25 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 ```c
     // Configure Push button at port D and enable internal pull-up resistor
-    // WRITE YOUR CODE HERE
+    
+    GPIO_config_input_pullup(&PORTD, BUTTON);
 
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-
-        // WRITE YOUR CODE HERE
+         while(GPIO_read(&PIND, BUTTON) == 0)
+         {
+             _delay_ms(BLINK_DELAY);
+             
+             GPIO_write_high(&PORTB, LED_GREEN);
+             GPIO_write_low(&PORTC, LED_BLUE);
+             
+             _delay_ms(BLINK_DELAY);
+             
+             GPIO_write_low(&PORTB, LED_GREEN);
+             GPIO_write_high(&PORTC, LED_BLUE);
+             
+         }
     }
 ```
 
