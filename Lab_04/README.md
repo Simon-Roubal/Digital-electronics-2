@@ -1,8 +1,8 @@
-# Lab 4: YOUR_FIRSTNAME FAMILYNAME
+# Lab 4: ŠIMON ROUBAL
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_04](https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_04)
 
 
 ### Overflow times
