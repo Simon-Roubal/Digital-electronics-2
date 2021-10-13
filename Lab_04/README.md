@@ -27,7 +27,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ```c
  * @name  Definitions for 8-bit Timer/Counter0
  * @note  t_OVF = 1/F_CPU * prescaler * 2^n where n = 8, F_CPU = 16 MHz
- */
+
 /** @brief Stop timer, prescaler 000 --> STOP */
 #define TIM0_stop()           TCCR0B &= ~((1<<CS02) | (1<<CS01) | (1<<CS00));
 /** @brief Set overflow 16us, prescaler 001 --> 1 */
