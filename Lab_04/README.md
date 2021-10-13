@@ -11,16 +11,16 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 | **Module** | **Number of bits** | **1** | **8** | **32** | **64** | **128** | **256** | **1024** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| Timer/Counter0 | 8  | 16u | 128u | -- | | -- | | |
-| Timer/Counter1 | 16 |     |      | -- | | -- | | |
-| Timer/Counter2 | 8  |     |      |    | |    | | |
+| Timer/Counter0 | 8  | 16u | 128u | -- | 1m | -- | 4m | 16m |
+| Timer/Counter1 | 16 | 4m | 33m | -- | 262m | -- | 1s | 4s |
+| Timer/Counter2 | 8  | 16u | 128u | 512u | 1m | 2m | 4m | 16m |
 
 
 ### Timer library
 
 1. In your words, describe the difference between common C function and interrupt service routine.
-   * Function
-   * Interrupt service routine
+   * Function - Function is called when requested anywhere and anytim in the program.
+   * Interrupt service routine - ISR is called only when interrupt is executed, for example by overflowing timer.
 
 2. Part of the header file listing with syntax highlighting, which defines settings for Timer/Counter0:
 
