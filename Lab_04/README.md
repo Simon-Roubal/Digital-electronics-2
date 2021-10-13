@@ -58,4 +58,4 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 1. Scheme of Knight Rider application with four LEDs and a push button, connected according to Multi-function shield. Connect AVR device, LEDs, resistors, push button, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
-   ![obrazek](https://user-images.githubusercontent.com/77580298/137174195-a6408c63-0a3d-486a-89ea-447b31e3ec1a.png)
+   ![obrazek](https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_04/scheme.png)
