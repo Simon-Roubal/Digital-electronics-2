@@ -49,6 +49,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 3. Flowchart figure for function `main()` and interrupt service routine `ISR(TIMER1_OVF_vect)` of application that ensures the flashing of one LED in the timer interruption. When the button is pressed, the blinking is faster, when the button is released, it is slower. Use only a timer overflow and not a delay library.
 
    ![obrazek](https://user-images.githubusercontent.com/77580298/137168434-f588e65f-6d11-499e-ac22-4d000c035277.png)
+   ![obrazek](https://user-images.githubusercontent.com/77580298/137172354-3f8d8e14-8ebe-4808-b6c9-022043331498.png)
+
    
 
 ### Knight Rider
