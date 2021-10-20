@@ -1,8 +1,8 @@
-# Lab 5: YOUR_FIRSTNAME FAMILYNAME
+# Lab 5: ŠIMON ROUBAL
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_05](https://github.com/Simon-Roubal/Digital-electronics-2/tree/main/Lab_05)
 
 
 ### 7-segment library
