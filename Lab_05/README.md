@@ -1,81 +1,53 @@
-# Lab 2: YOUR_FIRSTNAME FAMILYNAME
+# Lab 5: YOUR_FIRSTNAME FAMILYNAME
 
 Link to your `Digital-electronics-2` GitHub repository:
 
    [https://github.com/...](https://github.com/...)
 
 
-### Active-low and active-high LEDs
+### 7-segment library
 
-1. Complete tables according to the AVR manual.
+1. In your words, describe the difference between Common Cathode and Common Anode 7-segment display.
+   * CC SSD
+   * CA SSD
 
-| **DDRB** | **Description** |
-| :-: | :-- |
-| 0 | Input pin |
-| 1 | |
-
-| **PORTB** | **Description** |
-| :-: | :-- |
-| 0 | Output low value |
-| 1 | |
-
-| **DDRB** | **PORTB** | **Direction** | **Internal pull-up resistor** | **Description** |
-| :-: | :-: | :-: | :-: | :-- |
-| 0 | 0 | input | no | Tri-state, high-impedance |
-| 0 | 1 | | | |
-| 1 | 0 | | | |
-| 1 | 1 | | | |
-
-2. Part of the C code listing with syntax highlighting, which blinks alternately with a pair of LEDs; let one LED is connected to port B and the other to port C:
+2. Code listing with syntax highlighting of two interrupt service routines (`TIMER0_OVF_vect`, `TIMER0_OVF_vect`) from counter application with at least two digits, ie. values from 00 to 59:
 
 ```c
-int main(void)
+/**********************************************************************
+ * Function: Timer/Counter1 overflow interrupt
+ * Purpose:  Increment counter value from 00 to 59.
+ **********************************************************************/
+ISR(TIMER1_OVF_vect)
 {
-    // Green LED at port B
-    // Set pin as output in Data Direction Register...
-    DDRB = DDRB | (1<<LED_GREEN);
-    // ...and turn LED off in Data Register
-    PORTB = PORTB & ~(1<<LED_GREEN);
-
-    // Configure the second LED at port C
     // WRITE YOUR CODE HERE
 
-    // Infinite loop
-    while (1)
-    {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-
-        // WRITE YOUR CODE HERE
-    }
-
-    // Will never reach this
-    return 0;
 }
 ```
 
-
-### Push button
-
-1. Part of the C code listing with syntax highlighting, which toggles LEDs only if push button is pressed. Otherwise, the value of the LEDs does not change. Let the push button is connected to port D:
-
 ```c
-    // Configure Push button at port D and enable internal pull-up resistor
+/**********************************************************************
+ * Function: Timer/Counter0 overflow interrupt
+ * Purpose:  Display tens and units of a counter at SSD.
+ **********************************************************************/
+ISR(TIMER0_OVF_vect)
+{
+    static uint8_t pos = 0;
+
     // WRITE YOUR CODE HERE
 
-    // Infinite loop
-    while (1)
-    {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-
-        // WRITE YOUR CODE HERE
-    }
+}
 ```
 
+3. Flowchart figure for function `SEG_clk_2us()` which generates one clock period on `SEG_CLK` pin with a duration of 2&nbsp;us. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
 
-### Knight Rider
+   ![your figure]()
 
-1. Scheme of Knight Rider application, i.e. connection of AVR device, five LEDs, resistors, one push button, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
+
+### Kitchen alarm
+
+Consider a kitchen alarm with a 7-segment display, one LED and three push buttons: start, +1 minute, -1 minute. Use the +1/-1 minute buttons to increment/decrement the timer value. After pressing the Start button, the countdown starts. The countdown value is shown on the display in the form of mm.ss (minutes.seconds). At the end of the countdown, the LED will start blinking.
+
+1. Scheme of kitchen alarm; do not forget the supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values.
 
    ![your figure]()
