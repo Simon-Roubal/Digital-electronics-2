@@ -37,15 +37,19 @@ ISR(TIMER1_OVF_vect)
 ISR(TIMER0_OVF_vect)
 {
     static uint8_t pos = 0;
-
-    // WRITE YOUR CODE HERE
-
+    
+    pos++;
+    if(pos > 1)
+    {
+        pos = 0;
+        SEG_update_shift_regs(counter, pos);
+    }
 }
 ```
 
 3. Flowchart figure for function `SEG_clk_2us()` which generates one clock period on `SEG_CLK` pin with a duration of 2&nbsp;us. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
 
-   ![your figure]()
+   ![obrazek](https://user-images.githubusercontent.com/77580298/138878094-f167ca81-e1dd-4a57-8c38-97c2eeaf4e43.png)
 
 
 ### Kitchen alarm
