@@ -20,8 +20,12 @@ Link to your `Digital-electronics-2` GitHub repository:
  **********************************************************************/
 ISR(TIMER1_OVF_vect)
 {
-    // WRITE YOUR CODE HERE
-
+    counter ++;
+    if (counter > 9)
+    {
+        counter = 0;
+    }
+    SEG_update_shift_regs(counter, 0);
 }
 ```
 
