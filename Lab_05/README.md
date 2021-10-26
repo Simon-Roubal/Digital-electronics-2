@@ -20,12 +20,19 @@ Link to your `Digital-electronics-2` GitHub repository:
  **********************************************************************/
 ISR(TIMER1_OVF_vect)
 {
-    counter ++;
-    if (counter > 9)
+    static uint8_t counter = 0;
+    static uint8_t counter_tens = 0;
+    if (counter == 9 && counter_tens == 5)
     {
         counter = 0;
+        counter_tens = 0;
     }
-    SEG_update_shift_regs(counter, 0);
+    if (counter > 9 && counter_tens !=5)
+    counter ++;
+    {
+        counter = 0;
+        counter_tens++;
+    }
 }
 ```
 
@@ -39,10 +46,15 @@ ISR(TIMER0_OVF_vect)
     static uint8_t pos = 0;
     
     pos++;
-    if(pos > 1)
+    if(pos == 0)
+    {
+        pos = 1;
+        SEG_update_shift_regs(counter, 0);
+    }
+    else
     {
         pos = 0;
-        SEG_update_shift_regs(counter, pos);
+        SEG_update_shift_regs(counter_tens, 1);
     }
 }
 ```
