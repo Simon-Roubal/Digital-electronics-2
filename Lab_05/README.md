@@ -28,11 +28,11 @@ ISR(TIMER1_OVF_vect)
         counter_tens = 0;
     }
     if (counter > 9 && counter_tens !=5)
-    counter ++;
     {
         counter = 0;
         counter_tens++;
     }
+    counter ++;
 }
 ```
 
