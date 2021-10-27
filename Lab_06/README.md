@@ -8,7 +8,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### LCD display module
 
 1. In your words, describe what ASCII table is.
-   * ASCII
+   * ASCII - It's a standardised table containg most used symbols and letters and their numerical representation.
 
 2. (Hand-drawn) picture of time signals between ATmega328P and LCD keypad shield (HD44780 driver) when transmitting three character data `De2`.
 
