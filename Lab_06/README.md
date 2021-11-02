@@ -12,7 +12,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 2. Picture of time signals between ATmega328P and LCD keypad shield (HD44780 driver) when transmitting three character data `De2`.
 
-   ![your figure]()
+   ![obrazek](https://user-images.githubusercontent.com/77580298/139856400-8a455364-fda6-4074-88b6-681f146c5a67.png)
 
 
 ### Stopwatch
