@@ -27,8 +27,6 @@ Link to this file in your GitHub repository:
  **********************************************************************/
 ISR(ADC_vect)
 {
-    ISR(ADC_vect)
-{
     uint16_t value = 0;
     char lcd_string[4] = "0000";
 
@@ -107,8 +105,6 @@ ISR(ADC_vect)
         uart_puts("None");
         uart_puts("\r\n");
     }
-}
-
 }
 ```
 
