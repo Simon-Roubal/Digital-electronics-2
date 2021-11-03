@@ -2,7 +2,7 @@
 
 Link to this file in your GitHub repository:
 
-[https://github.com/Simon-Roubal/Digital-electronics-2/edit/main/Lab_07/README.md](https://github.com/Simon-Roubal/Digital-electronics-2/edit/main/Lab_07/README.md)
+[https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_07/README.md](https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_07/README.md)
 
 
 ### Analog-to-Digital Conversion
