@@ -1,8 +1,8 @@
-# Lab 7: YOUR_FIRSTNAME FAMILYNAME
+# Lab 7: ŠIMON ROUBAL
 
 Link to this file in your GitHub repository:
 
-[https://github.com/your-github-account/repository-name/lab_name](https://github.com/...)
+[https://github.com/Simon-Roubal/Digital-electronics-2/edit/main/Lab_07/README.md](https://github.com/Simon-Roubal/Digital-electronics-2/edit/main/Lab_07/README.md)
 
 
 ### Analog-to-Digital Conversion
