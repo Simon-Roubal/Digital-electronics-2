@@ -125,4 +125,5 @@ ISR(ADC_vect)
 Consider an application for temperature measurement and display. Use temperature sensor [TC1046](http://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf), LCD, one LED and a push button. After pressing the button, the temperature is measured, its value is displayed on the LCD and data is sent to the UART. When the temperature is too high, the LED will start blinking.
 
 1. Scheme of temperature meter. The image can be drawn on a computer or by hand. Always name all components and their values.
-https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_07/sch7.png
+![sch7](https://user-images.githubusercontent.com/77580298/140944642-fa731fa4-e49a-44a9-a033-4e49f2dcf5d4.png)
+
