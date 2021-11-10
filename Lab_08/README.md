@@ -1,8 +1,8 @@
-# Lab 8: YOUR_FIRSTNAME LASTNAME
+# Lab 8: ŠIMON ROUBAL
 
 Link to this file in your GitHub repository:
 
-[https://github.com/your-github-account/repository-name/lab_name](https://github.com/...)
+[https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_08/README.md](https://github.com/Simon-Roubal/Digital-electronics-2/blob/main/Lab_08/README.md)
 
 ### Arduino Uno pinout
 
